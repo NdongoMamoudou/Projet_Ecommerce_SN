@@ -5,13 +5,20 @@ import './App.css';
 
 // src/App.js
 import React from 'react';
-import ProduitList from './components/ProduitList';
+import Home from './pages/Home';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './Components/Header';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <ProduitList />
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" exact={true} element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

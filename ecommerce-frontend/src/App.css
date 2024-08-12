@@ -1,3 +1,7 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+
 .App {
   text-align: center;
 }
@@ -32,7 +36,282 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+/* pour la page Home*/
+
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+}
+
+.couleur-bleu {
+  background: #233a95;
+}
+
+
+
+.HeaderWrapper .top_strip {
+  padding: 8px 0px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.HeaderWrapper .header {
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.logoShop img {
+  max-width: 100%;
+  /* Assure que l'image s'adapte à son conteneur */
+  height: auto;
+  /* Conserve les proportions de l'image */
+}
+
+.parti2 {
+  display: flex;
+  justify-content: center;
+  /* Centre la barre de recherche horizontalement */
+  align-items: center;
+  /* Centre verticalement */
+
+}
+
+.headerSearch {
+  display: flex;
+  align-items: center;
+  /* Aligne les éléments verticalement */
+  width: 100%;
+  /* S'assure que la barre de recherche prend toute la largeur disponible */
+  max-width: 600px;
+  /* Optionnel : ajuste la largeur maximale de la barre de recherche */
+}
+
+.headerSearch input {
+  background: transparent;
+  border: 1px solid #ccc;
+  /* Bordure légère pour l'input */
+  border-radius: 20px;
+  /* Coins arrondis pour l'input */
+  outline: none;
+  /* Supprime le contour de focus par défaut */
+  font-size: 16px;
+  color: #000;
+  width: 100%;
+  /* Prend toute la largeur disponible */
+  padding: 10px;
+  /* Ajoute de l'espace à l'intérieur de l'input */
+}
+
+.headerSearch button {
+  background: #233a95;
+  /* Couleur de fond du bouton */
+  border: none;
+  border-radius: 20px;
+  /* Coins arrondis pour le bouton */
+  color: #fff;
+  /* Couleur du texte dans le bouton */
+  font-size: 16px;
+  padding: 0 15px;
+  /* Ajoute de l'espace horizontal à l'intérieur du bouton */
+  cursor: pointer;
+  /* Change le curseur en pointeur */
+  margin-left: 10px;
+  /* Ajoute de l'espace entre l'input et le bouton */
+}
+
+.headerSearch button:hover {
+  background: #1a2a7f;
+  /* Couleur de fond du bouton au survol */
+}
+
+
+.top_strip p {
+  color: #fff;
+  /* Change la couleur du texte en blanc */
+}
+
+.top_strip b {
+  color: #fff;
+  /* Assure que le texte en gras est également blanc */
+}
+
+
+
+/*   */
+
+
+.HeaderWrapper .header {
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.logoShop img {
+  max-width: 100%;
+  /* Assure que l'image s'adapte à son conteneur */
+  height: auto;
+  /* Conserve les proportions de l'image */
+}
+
+.parti2 {
+  display: flex;
+  justify-content: center;
+  /* Centre la barre de recherche horizontalement */
+  align-items: center;
+  /* Centre les éléments verticalement */
+}
+
+
+/**/
+
+/* Barre de recherche */
+.headerSearch {
+  display: flex;
+  align-items: center;
+  background: #f3f4f7;
+  /* Fond gris clair */
+  border: 1px solid #ccc;
+  /* Bordure légère */
+  border-radius: 25px;
+  /* Coins arrondis pour un aspect moderne */
+  padding: 0 10px;
+  /* Ajoute un peu de padding horizontal */
+  width: 100%;
+  /* S'assure que la barre de recherche prend toute la largeur disponible */
+  max-width: 600px;
+  /* Optionnel : ajuste la largeur maximale de la barre de recherche */
+  margin-right: 20px;
+  /* Ajoute de l'espace à droite de la barre de recherche */
+}
+
+.headerSearch input {
+  background: transparent !important;
+  /* Fond transparent pour l'input */
+  border: none;
+  /* Supprimer la bordure par défaut de l'input */
+  outline: none;
+  /* Supprimer le contour de focus par défaut */
+  font-size: 16px;
+  /* Taille de la police */
+  color: #000;
+  /* Couleur du texte */
+  flex-grow: 1;
+  /* Permet à l'input de prendre toute la largeur disponible */
+  padding: 10px;
+  /* Ajouter de l'espace à l'intérieur de l'input */
+  border-radius: 20px;
+  /* Coins arrondis pour l'input */
+}
+
+.headerSearch button {
+  background: #233a95;
+  /* Couleur de fond du bouton */
+  border: none;
+  /* Supprimer la bordure du bouton */
+  border-radius: 20px;
+  /* Coins arrondis pour le bouton */
+  color: #fff;
+  /* Couleur du texte dans le bouton */
+  font-size: 16px;
+  /* Taille de la police du bouton */
+  padding: 0 15px;
+  /* Ajouter de l'espace horizontal à l'intérieur du bouton */
+  cursor: pointer;
+  /* Changer le curseur en pointeur */
+  margin-left: 10px;
+  /* Ajouter de l'espace entre l'input et le bouton */
+}
+
+.headerSearch button:hover {
+  background: #1a2a7f;
+  /* Couleur de fond du bouton au survol */
+}
+
+.headerSearch button:focus {
+  background: #e0e0e0;
+  /* Couleur de fond grise clair lorsque le bouton est focalisé */
+  outline: none;
+  /* Supprimer le contour de focus par défaut */
+}
+
+.headerSearch button:active {
+  background: #b0b0b0;
+  /* Couleur de fond grise lorsque le bouton est pressé */
+}
+
+/* Cercle utilisateur */
+.usercercle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  /* Arrondit complètement le bouton */
+  border: 1px solid rgba(0, 0, 0, 1);
+  /* Bordure noire légère */
+  color: #000;
+  /* Couleur du texte ou des icônes */
+  background: #f3f4f7;
+  /* Fond gris clair */
+  transition: background 0.3s ease;
+  /* Animation de la couleur de fond */
+}
+
+
+.usercercle:hover {
+  background: #e0e0e0;
+  /* Couleur de fond grise clair au survol */
+}
+
+.usercercle:focus {
+  background: #e0e0e0;
+  /* Couleur de fond grise clair lorsque le bouton est focalisé */
+}
+
+.usercercle:active {
+  background: #b0b0b0;
+  /* Couleur de fond grise lorsque le bouton est pressé */
+}
+
+.usercercle svg {
+  font-size: 30px;
+  /* Taille de l'icône */
+}
+
+
+.cartTab button {
+  background: #fff1ee !important;
+}
+
+.cartTab button svg {
+  color: red !important;
+}
+
+.cartTab .price {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 8);
+  font-size: 700;
+}
+
+.cartTab .count {
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  background: red;
+  border-radius: 50%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+
 }
