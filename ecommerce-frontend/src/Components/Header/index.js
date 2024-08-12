@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-import { IoSearch } from "react-icons/io5";
 import Button from '@mui/material/Button';
 import { FiUser } from "react-icons/fi";
 import { IoBagOutline } from "react-icons/io5";
+import SearchBox from "./SearchBox";
+import Navigation from "./Navigation";
+
 
 
 const Header = () => {
@@ -10,7 +12,7 @@ const Header = () => {
         <div className="HeaderWrapper">
             <div className="top_strip couleur-bleu" >
                 <div className="container">
-                    <p className="mb-0   mt- 0 text-center">Bienvenue chez <b>Ndongo and Famally</b> Shop</p>
+                    <p className="mb-0   mt- 0 text-center">Bienvenue chez <b>Ndongo & Famalle</b> Shop</p>
 
                 </div>
 
@@ -25,11 +27,9 @@ const Header = () => {
                         </div>
                         <div className="col-sm-10 d-flex align-items-center parti2">
                             {/* Barre de recherche */}
-                            <div className="headerSearch  ml-3 mr-3">
-                                <input type="text" placeholder="Chercher un produit" />
-                                <Button> <IoSearch /></Button>
 
-                            </div>
+                            <SearchBox />
+
                             {/* Barre de recherche */}
 
                             <div className="parti3 d-flex  align-items-center ml-auto ">
@@ -54,6 +54,7 @@ const Header = () => {
 
             </header>
 
+            <Navigation />
         </div>
     );
 }

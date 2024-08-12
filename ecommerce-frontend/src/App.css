@@ -42,6 +42,17 @@
   }
 }
 
+@media (min-width : 1300px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1200px;
+  }
+}
+
 
 
 /* pour la page Home*/
@@ -67,8 +78,10 @@ body {
 
 .HeaderWrapper .header {
   width: 100%;
-  padding: 15px 0px;
+  padding: 25px 0px;
 }
+
+
 
 .logoShop img {
   max-width: 100%;
@@ -314,4 +327,33 @@ body {
   width: 20px;
   height: 20px;
 
+}
+
+
+/* */
+
+
+nav .allCatTab {
+  background: #2bbef9 !important;
+  /* Couleur de fond bleue */
+  padding: 8px 30px !important;
+  border-radius: 30px !important;
+  color: #fff !important;
+  margin-top: -80px;
+  /* Ajuste la valeur pour remonter le bouton */
+}
+
+nav .allCatTab:hover {
+  background: #1a8fcc !important;
+  /* Une nuance plus foncée au survol */
+}
+
+/* Réinitialiser le style du nav pour enlever le fond rose */
+nav {
+  border: none !important;
+  /* Supprime les bordures du nav */
+  box-shadow: none !important;
+  /* Supprime toute ombre éventuelle */
+  background-color: transparent !important;
+  /* Assure que le fond est transparent, si désiré */
 }
